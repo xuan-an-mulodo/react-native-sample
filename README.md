@@ -2,4 +2,4 @@
 React Native
 
 ## TODO
-- [] Redux
+- [ ] Redux
