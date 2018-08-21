@@ -1,5 +1,4 @@
-# BReactNative
-React Native
+# React Native
 
 ## TODO
 - [ ] Redux
