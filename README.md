@@ -1,6 +1,7 @@
 # React Native
 
-## TODO
+## Features
 - [ ] Redux
 - [ ] Flow
 - [ ] RESTful API
+
