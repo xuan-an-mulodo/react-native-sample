@@ -6,10 +6,10 @@ matrix:
           node_js: "7"
           before_install:
               - node --version
-install:
-    - npm install
-script:
-    - npm test
+          install:
+              - npm install
+          script:
+              - npm test
 ~
 ~
 ~
