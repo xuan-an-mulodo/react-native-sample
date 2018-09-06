@@ -1,5 +1,9 @@
 # React Native
 
+## Status
+
+[![Build Status](https://travis-ci.org/blcsntb/BReactNative.svg)](https://travis-ci.org/blcsntb/BReactNative)
+
 ## Features
 - [ ] CI
   - [x] Travis
@@ -10,4 +14,3 @@
 - [ ] Appium
 - [ ] Detox
 - [ ] Fastlane
-
