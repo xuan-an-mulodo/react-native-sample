@@ -1,7 +1,9 @@
 # React Native
 
 ## Features
-- [x] Travis
+- [ ] CI
+  - [x] Travis
+  - [ ] [Bitrise](https://www.bitrise.io)
 - [x] Jest
 - [ ] Flow
 - [ ] ESLint
