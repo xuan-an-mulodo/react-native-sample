@@ -13,4 +13,5 @@ install:
   - travis_retry yarn
   
 script:
+  - yarn appium &
   - yarn test
