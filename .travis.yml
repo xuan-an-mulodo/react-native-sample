@@ -17,7 +17,7 @@ before_install:
   
 install:
   - travis_retry yarn
+  - yarn appium &
   
 script:
-  - yarn appium &
   - yarn test
