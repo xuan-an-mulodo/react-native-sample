@@ -14,10 +14,10 @@ matrix:
       
 before_install:
   - travis_retry npm install -g yarn
+  - yarn appium &
   
 install:
   - travis_retry yarn
-  - yarn appium &
   
 script:
   - yarn test
