@@ -1,19 +1,24 @@
+node_js:
+  - "8"
+  
 cache:
   yarn: true
   directories:
     - node_modules
+  
 matrix:
   include:
     - language: objective-c
       os: osx
       osx_image: xcode9.4
-      node_js:
-        - "8"
-      before_install:
-        - node --version
-        - travis_retry npm install -g yarn
-        - yarn -version
-      install:
-        - travis_retry yarn
-      script:
-        - yarn test
+    
+before_install:
+  - node --version
+  - travis_retry npm install -g yarn
+  - yarn -version
+  
+install:
+  - travis_retry yarn
+  
+script:
+  - yarn test
