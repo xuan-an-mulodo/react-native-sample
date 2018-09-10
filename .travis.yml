@@ -14,7 +14,7 @@ matrix:
       
 before_install:
   - travis_retry npm install -g yarn
-  - yarn appium &
+  - yarn appium --log-level error &
   
 install:
   - travis_retry yarn
