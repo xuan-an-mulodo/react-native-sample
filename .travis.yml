@@ -7,9 +7,7 @@ cache:
     - node_modules
     
 before_install:
-  - node --version
   - travis_retry npm install -g yarn
-  - yarn -version
   
 install:
   - travis_retry yarn
