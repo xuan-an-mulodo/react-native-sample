@@ -1,11 +1,12 @@
-node_js:
-  - "8"
+node_js: "8"
+podfile: ios/Podfile
   
 cache:
   yarn: true
   directories:
     - node_modules
     - ios/build
+    - ios/Pods
     
 matrix:
   include:
