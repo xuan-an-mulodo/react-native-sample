@@ -33,3 +33,14 @@ script:
   - yarn appium --log-level error &
   - yarn xcodebuild -configuration $IOS_CONFIGURATION > xcodebuild.log
   - yarn test
+
+before_deploy:
+  - echo -e "machine github.com\n  login $GITHUB_USER\n  password $GITHUB_USER_PASSWORD" >~/.netrc
+deploy:
+  - git add screenshots/*
+  - git commit -m 'Update screenshots'
+  - git push
+after_deploy:
+  - ./after_deploy_1.sh
+  - ./after_deploy_2.sh
+  
