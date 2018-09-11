@@ -11,6 +11,6 @@
 - [x] Jest
 - [ ] Flow
 - [ ] ESLint
-- [ ] Appium [#2](https://github.com/blcsntb/BReactNative/pull/2/files)
+- [x] Appium [#2](https://github.com/blcsntb/BReactNative/pull/2/files)
 - [ ] Detox
 - [ ] Fastlane
