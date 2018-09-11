@@ -25,5 +25,6 @@ install:
   
 script:
   - yarn appium --log-level error &
+  - pod install
   - yarn xcodebuild -configuration $IOS_CONFIGURATION > xcodebuild.log
   - yarn test
