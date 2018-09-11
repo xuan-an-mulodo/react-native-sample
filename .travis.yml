@@ -12,6 +12,7 @@ matrix:
     - os: osx
       osx_image: xcode9.4
       language: objective-c
+      env: IOS_DEVICE_NAME="iPhone 6"
       
 before_install:
   - travis_retry npm install -g yarn
@@ -21,5 +22,5 @@ install:
   
 script:
   - yarn appium --log-level error &
-  - yarn build-ios
+  - yarn xcodebuild > xcodebuild.log
   - yarn test

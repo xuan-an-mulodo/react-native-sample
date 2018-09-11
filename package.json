@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "appium": "appium",
-    "build-ios": "xcodebuild -project ios/BReactNative.xcodeproj -scheme BReactNative -derivedDataPath ios/build -destination \"platform=iOS Simulator,name=iPhone 6\"",
+    "xcodebuild": "xcodebuild -project ios/BReactNative.xcodeproj -scheme BReactNative -derivedDataPath ios/build -destination \"platform=iOS Simulator,name=iPhone 6\"",
     "test": "jest"
   },
   "dependencies": {
