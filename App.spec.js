@@ -12,9 +12,9 @@ const serverConfig = {
 const iosCaps = {
   platformName: 'iOS',
   automationName: 'XCUITest',
-  deviceName: process.env.IOS_DEVICE_NAME,
+  deviceName: process.env.IOS_DEVICE_NAME || 'iPhone 6',
   platformVersion: '11.4',
-  app: 'ios/build/Build/Products/Debug-iphonesimulator/BReactNative.app',
+  app: `ios/build/Build/Products/${process.env.IOS_CONFIGURATION || 'Debug'}-iphonesimulator/BReactNative.app`,
 };
 
 let driver;
