@@ -1,5 +1,4 @@
 node_js: "8"
-podfile: ios/Podfile
   
 cache:
   yarn: true
@@ -25,6 +24,6 @@ install:
   
 script:
   - yarn appium --log-level error &
-  - pod install
+  - cd ios && pod install && cd ..
   - yarn xcodebuild -configuration $IOS_CONFIGURATION > xcodebuild.log
   - yarn test
