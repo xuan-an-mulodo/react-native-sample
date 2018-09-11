@@ -36,5 +36,5 @@ script:
   - echo -e "machine github.com\n  login $GITHUB_USER\n  password $GITHUB_USER_PASSWORD" >~/.netrc
   - git add screenshots/*
   - git commit -m 'Update screenshots'
-  - git push
+  - git push origin feature/appium-screenshot
   
