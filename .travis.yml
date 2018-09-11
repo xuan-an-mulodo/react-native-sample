@@ -5,6 +5,7 @@ cache:
   yarn: true
   directories:
     - node_modules
+    - ios/build
     
 matrix:
   include:
@@ -14,10 +15,11 @@ matrix:
       
 before_install:
   - travis_retry npm install -g yarn
-  - yarn appium --log-level error &
   
 install:
   - travis_retry yarn
   
 script:
+  - yarn appium --log-level error &
+  - yarn build-ios
   - yarn test

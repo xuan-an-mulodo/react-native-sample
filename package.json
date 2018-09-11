@@ -5,6 +5,7 @@
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "appium": "appium",
+    "build-ios": "xcodebuild -project ios/BReactNative.xcodeproj -scheme BReactNative -derivedDataPath ios/build -destination \"platform=iOS Simulator,name=iPhone 6\"",
     "test": "jest"
   },
   "dependencies": {
@@ -17,7 +18,8 @@
     "babel-preset-react-native": "4.0.0",
     "jest": "23.5.0",
     "react-test-renderer": "16.3.1",
-    "wd": "^1.10.3"
+    "wd": "^1.10.3",
+    "resemblejs": "^2.10.3"
   },
   "jest": {
     "preset": "react-native"

@@ -2177,6 +2177,12 @@ camelcase@^4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-4.1.0.tgz#d545635be1e33c542649c69173e5de6acfae34dd"
 
+canvas-prebuilt@^1.6.5-prerelease.1:
+  version "1.6.11"
+  resolved "https://registry.yarnpkg.com/canvas-prebuilt/-/canvas-prebuilt-1.6.11.tgz#9b37071aa0ddd4f7c2b4a9e279b63fb2dc30db9b"
+  dependencies:
+    node-pre-gyp "^0.10.0"
+
 capture-exit@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/capture-exit/-/capture-exit-1.2.0.tgz#1c5fcc489fd0ab00d4f1ac7ae1072e3173fbab6f"
@@ -6103,6 +6109,12 @@ require-directory@^2.1.1:
 require-main-filename@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/require-main-filename/-/require-main-filename-1.0.1.tgz#97f717b69d48784f5f526a6c5aa8ffdda055a4d1"
+
+resemblejs@^2.10.3:
+  version "2.10.3"
+  resolved "https://registry.yarnpkg.com/resemblejs/-/resemblejs-2.10.3.tgz#e7ff06d948346286331ba3309a4b3bcc2451c0b3"
+  dependencies:
+    canvas-prebuilt "^1.6.5-prerelease.1"
 
 resolve-cwd@^2.0.0:
   version "2.0.0"

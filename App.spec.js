@@ -1,5 +1,6 @@
 import wd from 'wd';
-import fs from 'fs';
+import verifyScreenshot from './utils/VerifyScreenshot';
+import pathScreenshot from './utils/PathScreenshot';
 
 jasmine.DEFAULT_TIMEOUT_INTERVAL = 600000;
 
@@ -13,7 +14,7 @@ const iosCaps = {
   automationName: 'XCUITest',
   deviceName: 'iPhone 6',
   platformVersion: '11.4',
-  app: 'ios/BReactNative.zip',
+  app: 'ios/build/Build/Products/Debug-iphonesimulator/BReactNative.app',
 };
 
 let driver;
@@ -28,5 +29,8 @@ afterAll(async function() {
 });
 
 it('Open first screen', async function() {
+  expect.assertions(1);
   await driver.waitForElementByAccessibilityId('Welcome to React Native!');
+  await verifyScreenshot(await driver.takeScreenshot(), 'App', pathScreenshot(iosCaps))
+    .then((result) => expect(result).toBeTruthy());
 });
