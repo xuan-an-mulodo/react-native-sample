@@ -15,6 +15,12 @@ matrix:
       env:
         - IOS_CONFIGURATION=Release
         - IOS_DEVICE_NAME="iPhone 6"
+    - os: osx
+      osx_image: xcode9.4
+      language: objective-c
+      env:
+        - IOS_CONFIGURATION=Release
+        - IOS_DEVICE_NAME="iPhone X"
       
 before_install:
   - travis_retry npm install -g yarn
