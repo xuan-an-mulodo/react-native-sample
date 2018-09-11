@@ -1,3 +1,4 @@
+import fs from "fs";
 
 export default function compareImages(image1, image2, pathImageDiff) {
   return getDiffImageData(image1, image2)
