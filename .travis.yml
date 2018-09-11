@@ -37,4 +37,3 @@ script:
   - git add screenshots/*
   - git commit -m 'Update screenshots'
   - git push origin feature/appium-screenshot
-  
