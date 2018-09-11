@@ -6,7 +6,7 @@
 
 ## Features
 - [ ] CI
-  - [x] Travis
+  - [x] Travis [#6](https://github.com/blcsntb/BReactNative/pull/6/files)
   - [ ] [Bitrise](https://www.bitrise.io)
 - [x] Jest
 - [ ] Flow
