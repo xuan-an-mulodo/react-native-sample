@@ -34,7 +34,8 @@ script:
   - yarn xcodebuild -configuration $IOS_CONFIGURATION > xcodebuild.log
   - yarn test
   - echo -e "machine github.com\n  login $GITHUB_USER\n  password $GITHUB_USER_PASSWORD" >~/.netrc
-  - git config --global --edit
+  - git config --local user.name "Binh Nguyen"
+  - git config --local user.email "blcsntb@gmail.com"
   - git add screenshots/*
   - git commit -m 'Update screenshots'
   - git push origin feature/appium-screenshot
