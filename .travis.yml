@@ -33,7 +33,7 @@ script:
   - yarn appium --log-level error &
   - yarn xcodebuild -configuration $IOS_CONFIGURATION > xcodebuild.log
   - yarn test
-  - echo -e "machine github.com\n  login $GITHUB_USER\n  password $GITHUB_USER_PASSWORD" >~/.netrc
+  - echo -e "machine github.com\n  login blcsntb\n  password $GITHUB_USER_PASSWORD" >~/.netrc
   - git config --local user.name "Binh Nguyen"
   - git config --local user.email "blcsntb@gmail.com"
   - git add screenshots/*
