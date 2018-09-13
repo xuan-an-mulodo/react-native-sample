@@ -20,11 +20,17 @@ install:
 script:
   - yarn test
 
+before_deploy:
+  - mkdir gh-pages
+  - mv screenshots gh-pages/
+
 deploy:
   provider: pages
-  local-dir: screenshots
+  local-dir: gh-pages
   skip-cleanup: true
   github-token: $GH_TOKEN
   keep-history: true
   on:
-    condition: true
+    branch:
+      - master
+      - travis-deploy-gh-pages
