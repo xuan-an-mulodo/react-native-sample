@@ -41,7 +41,7 @@ script:
   - yarn test
 
 before_deploy:
-  - rm -rf screenshots/diff/
+  - git submodule update
 
 deploy:
   provider: pages
