@@ -7,6 +7,11 @@ cache:
     - ios/build
     - ios/Pods
     
+branches:
+  only:
+  - gh-pages
+  - /.*/
+  
 matrix:
   include:
     - os: osx
@@ -34,3 +39,18 @@ script:
   - yarn appium --log-level error &
   - yarn xcodebuild -configuration $IOS_CONFIGURATION > xcodebuild.log
   - yarn test
+
+before_deploy:
+  - mkdir gh-pages
+  - mv screenshots gh-pages/
+
+deploy:
+  provider: pages
+  local-dir: gh-pages
+  skip-cleanup: true
+  github-token: $GH_TOKEN
+  keep-history: true
+  on:
+    branch:
+      - master
+      - feature/appium-screenshot
