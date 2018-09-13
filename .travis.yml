@@ -14,3 +14,16 @@ install:
   
 script:
   - yarn test
+
+after_success:
+  - mkdir docs
+  - cp README.md docs/
+
+deploy:
+  provider: pages
+  local-dir: docs
+  skip-cleanup: true
+  github-token: $GH_TOKEN
+  keep-history: true
+  on:
+    branch: master
