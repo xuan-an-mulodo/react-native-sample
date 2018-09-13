@@ -20,14 +20,9 @@ install:
 script:
   - yarn test
 
-after_success:
-  - mkdir docs
-  - cp README.md docs/
-
 deploy:
   provider: pages
-  repo: BTravis
-  local-dir: docs
+  local-dir: screenshots
   skip-cleanup: true
   github-token: $GH_TOKEN
   keep-history: true
