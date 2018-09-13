@@ -25,7 +25,7 @@ matrix:
 before_install:
   - travis_retry npm install -g yarn
   - cd ios && pod install && cd ..
-  - git submodule add -b gh-pages "https://github.com/blcsntb/BReactNative.git" screenshots
+  - git submodule add -f -b gh-pages "https://github.com/blcsntb/BReactNative.git" screenshots
   
 install:
   - travis_retry yarn
