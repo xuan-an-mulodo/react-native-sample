@@ -1,0 +1,12 @@
+before_deploy:
+  - mkdir gh-pages
+  - mv image.png gh-pages/
+deploy:
+  provider: pages
+  local-dir: gh-pages
+  skip-cleanup: true
+  github-token: $GH_TOKEN
+  keep-history: false
+  on:
+    branch:
+      - deploy-github-pages-from-travis
