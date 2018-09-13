@@ -1,4 +1,4 @@
-before_deploy:
+script:
   - mkdir gh-pages
   - mv image.png gh-pages/
 deploy:
