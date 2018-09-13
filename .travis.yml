@@ -41,12 +41,11 @@ script:
   - yarn test
 
 before_deploy:
-  - mkdir gh-pages
-  - mv screenshots gh-pages/
+  - rm -rf screenshots/diff/
 
 deploy:
   provider: pages
-  local-dir: gh-pages
+  local-dir: screenshots
   skip-cleanup: true
   github-token: $GH_TOKEN
   keep-history: true
