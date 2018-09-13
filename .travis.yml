@@ -1,0 +1,12 @@
+script:
+  - touch commit.txt
+after_success:
+  - git config --global user.name "Binh Nguyen"
+  - git config --global user.email "blcsntb@gmail.com"
+  - git add commit.txt
+  - git commit -m 'Add commit.txt'
+  - git remote add travis https://${GH_TOKEN}@github.com/blcsntb/BReactNative.git > /dev/null 2>&1
+  - git push --quiet --set-upstream travis commit-from-travis
+env:
+  global:
+    secure: hHpDhdfhHPXEagZ0m9+t8v0Jo0Xap45d6ipSIXLqOPQM1us51CILp3KIs5jOh2nmJhHaZ6uLALYc0JdpjCkQoKBlLybEe3IHuGsYgjRpgHgezPWyYlVR3UBV2NZHqqTbQT7oqWmvmAlPW/P5+eyZa1bKCH0SszPQ8Q2B8AEfHledTeVvVreyz/f6v9n8z2miL6MCkk4k3caRBng0tO2XzZKOmd6U6nE+Mzny4ld7uSlb+6z/mhzF+/JccpZtYe88vhIQE8qKeldT9j5L6D9soe2u3ijvakL1YECmDfsVxbvw4kHAn3xclu3pXAWSdZcFDVkFunq4asY/oVYyloifxqbg5UhLAcXCgAXpWkvw/R9ymw2+L6xPSejt+DDhkuqhMjpS6cmMLWIQQg1FoLNgKfnaNOW5erYyoYfQkFC0JFwd9C8h3Gwi8Br8/d1WDsstqjHzuqiwJ5/zLcQuP0H5aQSNXmuK3dvEfhjrsHA/8uwBPjP1RXW6n+VcjSfGu/gR1IdfjQGvmDSi1D5gs2KdM4g13+0MVBII08GVCArmQvorUmulju2gNmy8HRDdEc+uJ6cc/xTLKCfm4V0TY52CCGeeSvxmsd4zmBEumpx+RXXMoxxvZQsvIQRlGnIVcqXYRqCKwfKbnsnchvSjiAoX5n+D21MPDM/AvYXlNXt25Fk=
