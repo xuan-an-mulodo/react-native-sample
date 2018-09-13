@@ -26,6 +26,7 @@ after_success:
 
 deploy:
   provider: pages
+  repo: BTravis
   local-dir: docs
   skip-cleanup: true
   github-token: $GH_TOKEN
