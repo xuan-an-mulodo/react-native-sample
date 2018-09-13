@@ -10,7 +10,7 @@ export default async function verifyScreenshot(base64, id, pathScreenshot) {
   }
 
   const image1 = await fs.readFileSync(pathImage1);
-  const pathTemp = pathScreenshot('tmp');
+  const pathTemp = './screenshot.png';
   await saveScreenshot(pathTemp, base64);
 
   const image2 = await fs.readFileSync(pathTemp);
