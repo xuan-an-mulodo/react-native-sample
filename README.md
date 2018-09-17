@@ -1,12 +1,12 @@
 ## Status
 
-[![Build Status](https://travis-ci.org/blcsntb/BReactNative.svg)](https://travis-ci.org/blcsntb/BReactNative)
+[![Build Status](https://travis-ci.org/blcsntb/react-native-sample.svg)](https://travis-ci.org/blcsntb/react-native-sample)
 
 ## Features
 
 | Name | Status | Example | Document |
 | :-- | :-: | :-: | :-:|
-| ESLint | | | |
+| [ESLint](https://github.com/eslint/eslint) | | | |
 | Flow | | | |
 | Jest | ✅ | | |
 | Detox | | | |
