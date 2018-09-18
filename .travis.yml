@@ -1,17 +1,14 @@
 node_js: "8"
-  
 cache:
   yarn: true
   directories:
     - node_modules
     - ios/build
     - ios/Pods
-    
 branches:
   only:
   - gh-pages
   - /.*/
-  
 matrix:
   include:
     - os: osx
@@ -19,27 +16,21 @@ matrix:
       language: objective-c
       - env:
         - IOS_CONFIGURATION=Release
-        - IOS_DEVICE_NAME="iPhone 6"
-      - env:
-        - IOS_CONFIGURATION=Release
-        - IOS_DEVICE_NAME="iPhone X"
-      
 before_install:
   - travis_retry npm install -g yarn
   - cd ios && pod install && cd ..
   - git submodule add -f -b gh-pages "https://github.com/blcsntb/BReactNative.git" screenshots
-  
 install:
   - travis_retry yarn
-  
 script:
   - yarn appium --log-level error &
   - yarn xcodebuild -configuration $IOS_CONFIGURATION > xcodebuild.log
-  - yarn test
-
+  - IOS_DEVICE_NAME="iPhone 5s" yarn test
+  - IOS_DEVICE_NAME="iPhone 6" yarn test
+  - IOS_DEVICE_NAME="iPhone 6 Plus" yarn test
+  - IOS_DEVICE_NAME="iPhone X" yarn test
 before_deploy:
   - git submodule update
-
 deploy:
   provider: pages
   local-dir: screenshots
