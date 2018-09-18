@@ -1,5 +1,5 @@
 PODS:
-  - SimulatorStatusMagic (2.1)
+  - SimulatorStatusMagic (2.2)
 
 DEPENDENCIES:
   - SimulatorStatusMagic
@@ -9,8 +9,8 @@ SPEC REPOS:
     - SimulatorStatusMagic
 
 SPEC CHECKSUMS:
-  SimulatorStatusMagic: 481558caf2b9ccb2ceba2cc193728d4db3dcac07
+  SimulatorStatusMagic: 0389a805fa8bd001e2977c4046730bdbd6642861
 
-PODFILE CHECKSUM: b724fb624e82dda0f817bd00b9822d48c320dcde
+PODFILE CHECKSUM: ab090218bb027067591eab45328d90f11211e461
 
 COCOAPODS: 1.5.3
