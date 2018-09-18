@@ -1,6 +1,7 @@
 
 const pathScreenshot = ({ platformName, deviceName, platformVersion }) => (id) => {
-  return `./screenshots/${id}-${platformName}-${deviceName}-${platformVersion}.png`;
+  const path = `./screenshots/${id}-${platformName}-${deviceName}-${platformVersion}.png`;
+  return path.replace(' ', '_')
 };
 
 export default pathScreenshot;
