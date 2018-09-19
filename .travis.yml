@@ -4,6 +4,7 @@ script:
 deploy:
   provider: pages
   local-dir: gh-pages
+  target-branch: screenshots
   skip-cleanup: true
   github-token: $GH_TOKEN
   keep-history: false
