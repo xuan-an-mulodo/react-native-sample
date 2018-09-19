@@ -29,6 +29,7 @@ script:
   - IOS_DEVICE_NAME="iPhone 6" yarn test
   - IOS_DEVICE_NAME="iPhone 6 Plus" yarn test
   - IOS_DEVICE_NAME="iPhone X" yarn test
+  - xcrun simctl list
 before_deploy:
   - git submodule update
 deploy:
