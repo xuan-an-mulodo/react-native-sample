@@ -1,6 +1,6 @@
 ## Status
 
-[![Build Status](https://travis-ci.org/blcsntb/react-native-sample.svg)](https://travis-ci.org/blcsntb/react-native-sample)
+[![Build Status](https://travis-ci.org/blcsntb/react-native-sample.svg)](https://travis-ci.org/blcsntb/react-native-sample) [![Greenkeeper badge](https://badges.greenkeeper.io/blcsntb/react-native-sample.svg)](https://greenkeeper.io/)
 
 ## Features
 
