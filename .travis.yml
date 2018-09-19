@@ -26,9 +26,13 @@ script:
   - yarn appium --log-level error &
   - yarn xcodebuild -configuration $IOS_CONFIGURATION > xcodebuild.log
   - IOS_DEVICE_NAME="iPhone 5s" yarn test
+  - xcrun simctl shutdown booted
   - IOS_DEVICE_NAME="iPhone 6" yarn test
+  - xcrun simctl shutdown booted
   - IOS_DEVICE_NAME="iPhone 6 Plus" yarn test
+  - xcrun simctl shutdown booted
   - IOS_DEVICE_NAME="iPhone X" yarn test
+  - xcrun simctl shutdown booted
   - xcrun simctl list
 before_deploy:
   - git submodule update
