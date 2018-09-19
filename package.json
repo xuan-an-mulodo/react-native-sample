@@ -6,7 +6,8 @@
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "appium": "appium",
     "xcodebuild": "xcodebuild -workspace ios/BReactNative.xcworkspace -scheme BReactNative -derivedDataPath ios/build -destination \"platform=iOS Simulator,name=iPhone 6\"",
-    "test": "jest"
+    "test": "jest",
+    "test-and-shutdown-ios-simulator": "yarn test && xcrun simctl shutdown booted"
   },
   "dependencies": {
     "react": "16.3.1",
