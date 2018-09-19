@@ -1,6 +1,7 @@
 ## Status
 
-[![Build Status](https://travis-ci.org/blcsntb/react-native-sample.svg)](https://travis-ci.org/blcsntb/react-native-sample)
+[![](https://travis-ci.org/blcsntb/react-native-sample.svg)](https://travis-ci.org/blcsntb/react-native-sample)
+[![](https://badges.greenkeeper.io/FaridSafi/react-native-gifted-chat.svg)](https://greenkeeper.io/)
 
 ## Features
 
