@@ -412,8 +412,8 @@ PhaseScriptExecution Install\ Third\ Party /Users/travis/build/blcsntb/react-nat
     /bin/sh -c /Users/travis/build/blcsntb/react-native-sample/ios/build/Build/Intermediates.noindex/React.build/Release-iphonesimulator/double-conversion.build/Script-190EE32F1E6A43DE00A8543A.sh
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   119    0   119    0     0    682      0 --:--:-- --:--:-- --:--:--   683
-100  510k  100  510k    0     0  1321k      0 --:--:-- --:--:-- --:--:-- 1321k
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   119    0   119    0     0    599      0 --:--:-- --:--:-- --:--:--   601
+100  510k  100  510k    0     0  1031k      0 --:--:-- --:--:-- --:--:-- 1031k
 curl: Saved to filename 'glog-0.3.4.tar.gz'
 Unpacking /Users/travis/.rncache/glog-0.3.4.tar.gz...
 checking for a BSD-compatible install... /usr/local/bin/ginstall -c
@@ -622,20 +622,20 @@ config.status: executing depfiles commands
 config.status: executing libtool commands
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   132    0   132    0     0    899      0 --:--:-- --:--:-- --:--:--   904
- 10 6847k   10  705k    0     0  1917k      0  0:00:03 --:--:--  0:00:03 1917k100 6847k  100 6847k    0     0  11.0M      0 --:--:-- --:--:-- --:--:-- 25.4M
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   132    0   132    0     0    731      0 --:--:-- --:--:-- --:--:--   733
+ 36 6847k   36 2524k    0     0  5639k      0  0:00:01 --:--:--  0:00:01 5639k100 6847k  100 6847k    0     0  10.9M      0 --:--:-- --:--:-- --:--:-- 25.5M
 curl: Saved to filename 'double-conversion-1.1.5.tar.gz'
 Unpacking /Users/travis/.rncache/double-conversion-1.1.5.tar.gz...
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   609    0   609    0     0   3252      0 --:--:-- --:--:-- --:--:--  3256
-  5 11.7M    5  610k    0     0  1359k      0  0:00:08 --:--:--  0:00:08 1359k100 11.7M  100 11.7M    0     0  12.2M      0 --:--:-- --:--:-- --:--:-- 21.9M
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   609    0   609    0     0   3493      0 --:--:-- --:--:-- --:--:--  3500
+ 28 11.7M   28 3415k    0     0  6050k      0  0:00:01 --:--:--  0:00:01 6050k100 11.7M  100 11.7M    0     0  12.7M      0 --:--:-- --:--:-- --:--:-- 23.9M
 curl: Saved to filename 'boost_1_63_0.tar.gz'
 Unpacking /Users/travis/.rncache/boost_1_63_0.tar.gz...
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   130    0   130    0     0    778      0 --:--:-- --:--:-- --:--:--   778
-100 1504k  100 1504k    0     0  3696k      0 --:--:-- --:--:-- --:--:-- 3696k
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   130    0   130    0     0    634      0 --:--:-- --:--:-- --:--:--   637
+100 1504k  100 1504k    0     0  3152k      0 --:--:-- --:--:-- --:--:-- 3152k
 curl: Saved to filename 'folly-2016.09.26.00.tar.gz'
 Unpacking /Users/travis/.rncache/folly-2016.09.26.00.tar.gz...
 
@@ -1303,19 +1303,19 @@ In file included from /Users/travis/build/blcsntb/react-native-sample/node_modul
                    ^~~~~
 7 warnings generated.
 
-Libtool /Users/travis/build/blcsntb/react-native-sample/ios/build/Build/Intermediates.noindex/React.build/Release-iphonesimulator/third-party.build/Objects-normal/x86_64/libthird-party.a normal x86_64
-    cd /Users/travis/build/blcsntb/react-native-sample/node_modules/react-native/React
-    export IPHONEOS_DEPLOYMENT_TARGET=8.0
-    export PATH="/Applications/Xcode-9.4.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode-9.4.1.app/Contents/Developer/usr/bin:/Users/travis/build/blcsntb/react-native-sample/node_modules/.bin:/Users/travis/.config/yarn/link/node_modules/.bin:/Users/travis/build/blcsntb/react-native-sample/node_modules/.bin:/Users/travis/.config/yarn/link/node_modules/.bin:/Users/travis/.nvm/versions/node/v6.14.3/libexec/lib/node_modules/npm/bin/node-gyp-bin:/Users/travis/.nvm/versions/node/v6.14.3/lib/node_modules/npm/bin/node-gyp-bin:/Users/travis/.nvm/versions/node/v6.14.3/bin/node_modules/npm/bin/node-gyp-bin:/Users/travis/.rvm/gems/ruby-2.4.3/bin:/Users/travis/.rvm/gems/ruby-2.4.3@global/bin:/Users/travis/.rvm/rubies/ruby-2.4.3/bin:/Users/travis/.rvm/bin:/Users/travis/bin:/Users/travis/.local/bin:/Users/travis/.nvm/versions/node/v6.14.3/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
-    /Applications/Xcode-9.4.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only x86_64 -syslibroot /Applications/Xcode-9.4.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk -L/Users/travis/build/blcsntb/react-native-sample/ios/build/Build/Products/Release-iphonesimulator -filelist /Users/travis/build/blcsntb/react-native-sample/ios/build/Build/Intermediates.noindex/React.build/Release-iphonesimulator/third-party.build/Objects-normal/x86_64/third-party.LinkFileList -o /Users/travis/build/blcsntb/react-native-sample/ios/build/Build/Intermediates.noindex/React.build/Release-iphonesimulator/third-party.build/Objects-normal/x86_64/libthird-party.a
-/Applications/Xcode-9.4.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: file: /Users/travis/build/blcsntb/react-native-sample/ios/build/Build/Intermediates.noindex/React.build/Release-iphonesimulator/third-party.build/Objects-normal/x86_64/BitsFunctexcept.o has no symbols
-
 Libtool /Users/travis/build/blcsntb/react-native-sample/ios/build/Build/Intermediates.noindex/React.build/Release-iphonesimulator/third-party.build/Objects-normal/i386/libthird-party.a normal i386
     cd /Users/travis/build/blcsntb/react-native-sample/node_modules/react-native/React
     export IPHONEOS_DEPLOYMENT_TARGET=8.0
     export PATH="/Applications/Xcode-9.4.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode-9.4.1.app/Contents/Developer/usr/bin:/Users/travis/build/blcsntb/react-native-sample/node_modules/.bin:/Users/travis/.config/yarn/link/node_modules/.bin:/Users/travis/build/blcsntb/react-native-sample/node_modules/.bin:/Users/travis/.config/yarn/link/node_modules/.bin:/Users/travis/.nvm/versions/node/v6.14.3/libexec/lib/node_modules/npm/bin/node-gyp-bin:/Users/travis/.nvm/versions/node/v6.14.3/lib/node_modules/npm/bin/node-gyp-bin:/Users/travis/.nvm/versions/node/v6.14.3/bin/node_modules/npm/bin/node-gyp-bin:/Users/travis/.rvm/gems/ruby-2.4.3/bin:/Users/travis/.rvm/gems/ruby-2.4.3@global/bin:/Users/travis/.rvm/rubies/ruby-2.4.3/bin:/Users/travis/.rvm/bin:/Users/travis/bin:/Users/travis/.local/bin:/Users/travis/.nvm/versions/node/v6.14.3/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
     /Applications/Xcode-9.4.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only i386 -syslibroot /Applications/Xcode-9.4.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk -L/Users/travis/build/blcsntb/react-native-sample/ios/build/Build/Products/Release-iphonesimulator -filelist /Users/travis/build/blcsntb/react-native-sample/ios/build/Build/Intermediates.noindex/React.build/Release-iphonesimulator/third-party.build/Objects-normal/i386/third-party.LinkFileList -o /Users/travis/build/blcsntb/react-native-sample/ios/build/Build/Intermediates.noindex/React.build/Release-iphonesimulator/third-party.build/Objects-normal/i386/libthird-party.a
 /Applications/Xcode-9.4.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: file: /Users/travis/build/blcsntb/react-native-sample/ios/build/Build/Intermediates.noindex/React.build/Release-iphonesimulator/third-party.build/Objects-normal/i386/BitsFunctexcept.o has no symbols
+
+Libtool /Users/travis/build/blcsntb/react-native-sample/ios/build/Build/Intermediates.noindex/React.build/Release-iphonesimulator/third-party.build/Objects-normal/x86_64/libthird-party.a normal x86_64
+    cd /Users/travis/build/blcsntb/react-native-sample/node_modules/react-native/React
+    export IPHONEOS_DEPLOYMENT_TARGET=8.0
+    export PATH="/Applications/Xcode-9.4.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode-9.4.1.app/Contents/Developer/usr/bin:/Users/travis/build/blcsntb/react-native-sample/node_modules/.bin:/Users/travis/.config/yarn/link/node_modules/.bin:/Users/travis/build/blcsntb/react-native-sample/node_modules/.bin:/Users/travis/.config/yarn/link/node_modules/.bin:/Users/travis/.nvm/versions/node/v6.14.3/libexec/lib/node_modules/npm/bin/node-gyp-bin:/Users/travis/.nvm/versions/node/v6.14.3/lib/node_modules/npm/bin/node-gyp-bin:/Users/travis/.nvm/versions/node/v6.14.3/bin/node_modules/npm/bin/node-gyp-bin:/Users/travis/.rvm/gems/ruby-2.4.3/bin:/Users/travis/.rvm/gems/ruby-2.4.3@global/bin:/Users/travis/.rvm/rubies/ruby-2.4.3/bin:/Users/travis/.rvm/bin:/Users/travis/bin:/Users/travis/.local/bin:/Users/travis/.nvm/versions/node/v6.14.3/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
+    /Applications/Xcode-9.4.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only x86_64 -syslibroot /Applications/Xcode-9.4.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk -L/Users/travis/build/blcsntb/react-native-sample/ios/build/Build/Products/Release-iphonesimulator -filelist /Users/travis/build/blcsntb/react-native-sample/ios/build/Build/Intermediates.noindex/React.build/Release-iphonesimulator/third-party.build/Objects-normal/x86_64/third-party.LinkFileList -o /Users/travis/build/blcsntb/react-native-sample/ios/build/Build/Intermediates.noindex/React.build/Release-iphonesimulator/third-party.build/Objects-normal/x86_64/libthird-party.a
+/Applications/Xcode-9.4.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: file: /Users/travis/build/blcsntb/react-native-sample/ios/build/Build/Intermediates.noindex/React.build/Release-iphonesimulator/third-party.build/Objects-normal/x86_64/BitsFunctexcept.o has no symbols
 
 CreateUniversalBinary /Users/travis/build/blcsntb/react-native-sample/ios/build/Build/Products/Release-iphonesimulator/libthird-party.a normal i386\ x86_64
     cd /Users/travis/build/blcsntb/react-native-sample/node_modules/react-native/React
@@ -2586,43 +2586,7 @@ PhaseScriptExecution Include\ RCTJSCProfiler /Users/travis/build/blcsntb/react-n
     cd /Users/travis/build/blcsntb/react-native-sample/node_modules/react-native/React
     /bin/sh -c /Users/travis/build/blcsntb/react-native-sample/ios/build/Build/Intermediates.noindex/React.build/Release-iphonesimulator/React.build/Script-142C4F7F1B582EA6001F0B58.sh
 
-=== BUILD TARGET RCTNetwork OF PROJECT RCTNetwork WITH CONFIGURATION Release ===
-
-Check dependencies
-
-=== BUILD TARGET RCTSettings OF PROJECT RCTSettings WITH CONFIGURATION Release ===
-
-Check dependencies
-
-=== BUILD TARGET RCTImage OF PROJECT RCTImage WITH CONFIGURATION Release ===
-
-Check dependencies
-
-=== BUILD TARGET RCTGeolocation OF PROJECT RCTGeolocation WITH CONFIGURATION Release ===
-
-Check dependencies
-
-=== BUILD TARGET RCTVibration OF PROJECT RCTVibration WITH CONFIGURATION Release ===
-
-Check dependencies
-
-=== BUILD TARGET fishhook OF PROJECT RCTWebSocket WITH CONFIGURATION Release ===
-
-Check dependencies
-
-=== BUILD TARGET RCTWebSocket OF PROJECT RCTWebSocket WITH CONFIGURATION Release ===
-
-Check dependencies
-
 === BUILD TARGET RCTActionSheet OF PROJECT RCTActionSheet WITH CONFIGURATION Release ===
-
-Check dependencies
-
-=== BUILD TARGET RCTText OF PROJECT RCTText WITH CONFIGURATION Release ===
-
-Check dependencies
-
-=== BUILD TARGET RCTLinking OF PROJECT RCTLinking WITH CONFIGURATION Release ===
 
 Check dependencies
 
@@ -2634,11 +2598,47 @@ Check dependencies
 
 Check dependencies
 
+=== BUILD TARGET RCTAnimation OF PROJECT RCTAnimation WITH CONFIGURATION Release ===
+
+Check dependencies
+
+=== BUILD TARGET RCTSettings OF PROJECT RCTSettings WITH CONFIGURATION Release ===
+
+Check dependencies
+
+=== BUILD TARGET RCTText OF PROJECT RCTText WITH CONFIGURATION Release ===
+
+Check dependencies
+
 === BUILD TARGET RCTBlob OF PROJECT RCTBlob WITH CONFIGURATION Release ===
 
 Check dependencies
 
-=== BUILD TARGET RCTAnimation OF PROJECT RCTAnimation WITH CONFIGURATION Release ===
+=== BUILD TARGET RCTNetwork OF PROJECT RCTNetwork WITH CONFIGURATION Release ===
+
+Check dependencies
+
+=== BUILD TARGET fishhook OF PROJECT RCTWebSocket WITH CONFIGURATION Release ===
+
+Check dependencies
+
+=== BUILD TARGET RCTWebSocket OF PROJECT RCTWebSocket WITH CONFIGURATION Release ===
+
+Check dependencies
+
+=== BUILD TARGET RCTImage OF PROJECT RCTImage WITH CONFIGURATION Release ===
+
+Check dependencies
+
+=== BUILD TARGET RCTVibration OF PROJECT RCTVibration WITH CONFIGURATION Release ===
+
+Check dependencies
+
+=== BUILD TARGET RCTGeolocation OF PROJECT RCTGeolocation WITH CONFIGURATION Release ===
+
+Check dependencies
+
+=== BUILD TARGET RCTLinking OF PROJECT RCTLinking WITH CONFIGURATION Release ===
 
 Check dependencies
 
@@ -3131,8 +3131,8 @@ PhaseScriptExecution Bundle\ React\ Native\ code\ and\ images build/Build/Interm
 +[[ Release = \D\e\b\u\g ]]
 +BUNDLE_FILE=/Users/travis/build/blcsntb/react-native-sample/ios/build/Build/Products/Release-iphonesimulator/BReactNative.app/main.jsbundle
 +node /Users/travis/build/blcsntb/react-native-sample/node_modules/react-native/local-cli/cli.js bundle --entry-file index.js --platform ios --dev false --reset-cache --bundle-output /Users/travis/build/blcsntb/react-native-sample/ios/build/Build/Products/Release-iphonesimulator/BReactNative.app/main.jsbundle --assets-dest /Users/travis/build/blcsntb/react-native-sample/ios/build/Build/Products/Release-iphonesimulator/BReactNative.app
-Scanning folders for symlinks in /Users/travis/build/blcsntb/react-native-sample/node_modules (34ms)
-Scanning folders for symlinks in /Users/travis/build/blcsntb/react-native-sample/node_modules (33ms)
+Scanning folders for symlinks in /Users/travis/build/blcsntb/react-native-sample/node_modules (32ms)
+Scanning folders for symlinks in /Users/travis/build/blcsntb/react-native-sample/node_modules (31ms)
 Loading dependency graph, done.
 warning: the transform cache was reset.
 bundle: Writing bundle output to: /Users/travis/build/blcsntb/react-native-sample/ios/build/Build/Products/Release-iphonesimulator/BReactNative.app/main.jsbundle
@@ -3213,4 +3213,4 @@ Signing Identity:     "-"
 
 ** BUILD SUCCEEDED **
 
-Done in 260.14s.
+Done in 243.67s.
