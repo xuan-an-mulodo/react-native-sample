@@ -1,4 +1,5 @@
 script:
+  - rm image.png
   - git status --short
 deploy:
   provider: pages
