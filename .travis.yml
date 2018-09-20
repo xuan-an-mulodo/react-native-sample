@@ -3,7 +3,7 @@ script:
   - mv image.png gh-pages/
 deploy:
   provider: pages
-  local-dir: gh-pages
+  local-dir: .
   target-branch: screenshots
   skip-cleanup: true
   github-token: $GH_TOKEN
