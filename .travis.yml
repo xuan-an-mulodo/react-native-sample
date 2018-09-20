@@ -19,7 +19,6 @@ matrix:
 before_install:
   - travis_retry npm install -g yarn
   - cd ios && pod install && cd ..
-  - git submodule add -f -b gh-pages "https://github.com/blcsntb/BReactNative.git" screenshots
 install:
   - travis_retry yarn
 script:
@@ -30,14 +29,14 @@ script:
   - IOS_DEVICE_NAME="iPhone 6 Plus" yarn test-and-shutdown-ios-simulator
   - IOS_DEVICE_NAME="iPhone X" yarn test-and-shutdown-ios-simulator
 before_deploy:
-  - git submodule update
+  - git status --short
 deploy:
   provider: pages
-  local-dir: screenshots
+  local-dir: .
+  target-branch: verify-screenshot-with-appium
   skip-cleanup: true
   github-token: $GH_TOKEN
   keep-history: true
   on:
     branch:
-      - master
       - verify-screenshot-with-appium

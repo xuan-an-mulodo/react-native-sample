@@ -60,5 +60,4 @@ buck-out/
 Pods/
 *.xcworkspace
 
-screenshots/
 screenshot.png
