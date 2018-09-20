@@ -1,13 +1,10 @@
-script:
-  - mkdir gh-pages
-  - mv image.png gh-pages/
 deploy:
   provider: pages
   local-dir: .
-  target-branch: screenshots
+  target-branch: deploy-github-pages-from-travis
   skip-cleanup: true
   github-token: $GH_TOKEN
-  keep-history: false
+  keep-history: true
   on:
     branch:
       - deploy-github-pages-from-travis
