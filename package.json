@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "xcodebuild": "xcodebuild -project ios/BReactNative.xcodeproj -scheme BReactNative -derivedDataPath ios/build -destination \"platform=iOS Simulator,name=iPhone 6\"",
+    "xcodebuild": "xcodebuild -project ios/BReactNative.xcodeproj -scheme BReactNative -sdk iphonesimulator -derivedDataPath ios/build",
     "appium": "appium",
     "test": "jest"
   },
