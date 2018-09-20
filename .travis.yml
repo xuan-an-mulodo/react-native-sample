@@ -23,7 +23,7 @@ install:
   - travis_retry yarn
 script:
   - yarn appium --log-level error &
-  - yarn xcodebuild -configuration $IOS_CONFIGURATION > xcodebuild.log
+  - yarn xcodebuild -configuration $IOS_CONFIGURATION > ios/build/xcodebuild.log
   - IOS_DEVICE_NAME="iPhone 5s" yarn test-and-shutdown-ios-simulator
   - IOS_DEVICE_NAME="iPhone 6" yarn test-and-shutdown-ios-simulator
   - IOS_DEVICE_NAME="iPhone 6 Plus" yarn test-and-shutdown-ios-simulator
