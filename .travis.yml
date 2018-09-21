@@ -18,7 +18,8 @@ matrix:
       script:
         - yarn build-ios-release > ios/build/xcodebuild.log
         - yarn e2e-ios
-    - language: android
+    - os: osx
+      language: android
       android:
         components:
           - build-tools-22.0.1
