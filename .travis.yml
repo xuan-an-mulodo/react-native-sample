@@ -41,7 +41,8 @@ matrix:
       script:
         - yarn e2e-android
 before_install:
-  - node_js: "8"
+  - nvm install 8
+  - node --version
   - npm install -g yarn
 install:
   - yarn install
