@@ -4,10 +4,16 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
+    "build-ios-debug": "xcodebuild -workspace ios/BReactNative.xcworkspace -scheme BReactNative -derivedDataPath ios/build -sdk iphonesimulator -configuration Debug",
+    "build-ios-release": "xcodebuild -workspace ios/BReactNative.xcworkspace -scheme BReactNative -derivedDataPath ios/build -sdk iphonesimulator -configuration Release",
+    "build-android-debug": "cd android && ./gradlew assembleDebug --stacktrace && cd ..",
+    "build-android-release": "cd android && ./gradlew assembleRelease --stacktrace && cd ..",
     "appium": "appium",
-    "xcodebuild": "xcodebuild -workspace ios/BReactNative.xcworkspace -scheme BReactNative -derivedDataPath ios/build -destination \"platform=iOS Simulator,name=iPhone 6\"",
     "test": "jest",
-    "test-and-shutdown-ios-simulator": "yarn test && xcrun simctl shutdown booted"
+    "e2e": "jest --testMatch '**/?(*.)+(e2e).js?(x)'",
+    "e2e-ios": "yarn e2e",
+    "e2e-android": "IS_ANDROID=true yarn e2e",
+    "shutdown-ios-simulator": "xcrun simctl shutdown booted"
   },
   "dependencies": {
     "react": "16.3.1",
