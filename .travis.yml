@@ -26,7 +26,7 @@ matrix:
         components:
           - build-tools-23.0.1
           - android-23
-          - sys-img-armeabi-v7a-android-23
+          - sys-img-armeabi-v7a-android-22
       licenses:
         - android-sdk-preview-license-.+
         - android-sdk-license-.+
