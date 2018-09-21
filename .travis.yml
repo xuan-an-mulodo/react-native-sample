@@ -46,5 +46,7 @@ before_install:
   - npm install -g yarn
 install:
   - yarn install
-  - yarn test
+before_script:
   - yarn appium --log-level error &
+script:
+  - yarn test
