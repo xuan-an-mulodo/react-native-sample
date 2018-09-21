@@ -13,11 +13,11 @@ env:
   - IS_RELEASE=true
 matrix:
   include:
-    - os: osx
+    - language: objective-c
       osx_image: xcode9.4
-      language: objective-c
+      os: osx
       before_script:
-        - yarn build-ios-release > ios/build/xcodebuild.log
+        - yarn build-ios-release
       script:
         - yarn e2e-ios
     - language: android
