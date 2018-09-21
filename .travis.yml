@@ -28,8 +28,9 @@ before_install:
   - npm install -g yarn
 install:
   - yarn install
-  - yarn appium --log-level error &
+  - cd ios && pod install && cd ..
   - yarn test
+  - yarn appium --log-level error &
 before_deploy:
   - git status --short
 deploy:
