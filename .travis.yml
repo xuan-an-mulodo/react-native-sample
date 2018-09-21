@@ -1,13 +1,11 @@
 language: android
 android:
   components:
-    - build-tools-22.0.1
-    - android-22
-    - sys-img-armeabi-v7a-android-22
-# https://docs.travis-ci.com/user/languages/android/#how-to-create-and-start-an-emulator
+    - build-tools-28.0.1
+    - android-28
+    - sys-img-armeabi-v7a-android-28
 before_script:
-  - android list targets
-  - echo no | android create avd --force -n test -t android-22 --abi armeabi-v7a
+  - echo no | android create avd --force -n test -t android-28 --abi armeabi-v7a
   - emulator -avd test -no-audio -no-window &
   - android-wait-for-emulator
   - adb shell input keyevent 82 &
