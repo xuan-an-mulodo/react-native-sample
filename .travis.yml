@@ -1,5 +1,8 @@
 node_js:
   - "8"
+before_cache:
+  - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
+  - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
 cache:
   yarn: true
   directories:
@@ -18,13 +21,14 @@ matrix:
       script:
         - yarn build-ios-release > ios/build/xcodebuild.log
         - yarn e2e-ios
-    - os: osx
-      language: android
+    - language: android
       android:
         components:
           - build-tools-22.0.1
           - android-22
           - sys-img-armeabi-v7a-android-22
+      node_js:
+        - "8"
       before_script:
         - android list targets
         - echo no | android create avd --force -n test -t android-22 --abi armeabi-v7a
