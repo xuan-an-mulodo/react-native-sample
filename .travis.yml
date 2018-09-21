@@ -5,6 +5,9 @@ cache:
   directories:
     - node_modules
     - ios/build
+    - $HOME/.gradle/caches/
+    - $HOME/.gradle/wrapper/
+    - $HOME/.android/build-cache
 env:
   - IS_RELEASE=true
 matrix:
@@ -12,12 +15,28 @@ matrix:
     - os: osx
       osx_image: xcode9.4
       language: objective-c
+      script:
+        - yarn build-ios-release > ios/build/xcodebuild.log
+        - yarn e2e-ios
+    - language: android
+      android:
+        components:
+          - build-tools-22.0.1
+          - android-22
+          - sys-img-armeabi-v7a-android-22
+      before_script:
+        - android list targets
+        - echo no | android create avd --force -n test -t android-22 --abi armeabi-v7a
+        - emulator -avd test -no-audio -no-window &
+        - android-wait-for-emulator
+        - adb shell input keyevent 82 &
+      script:
+        - yarn build-android-release > android/app/build/gradlew.log
+        - yarn e2e-android
+        - adb devices
 before_install:
   - npm install -g yarn
 install:
   - yarn install
-script:
   - yarn test
   - yarn appium --log-level error &
-  - yarn build-ios-release > ios/build/xcodebuild.log
-  - yarn e2e-ios
