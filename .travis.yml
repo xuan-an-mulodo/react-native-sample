@@ -1,6 +1,6 @@
 language: android
 android:
-  component:
+  components:
     - build-tools-22.0.1
     - android-22
 # https://docs.travis-ci.com/user/languages/android/#how-to-create-and-start-an-emulator
