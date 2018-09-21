@@ -26,6 +26,10 @@ matrix:
           - build-tools-22.0.1
           - android-22
           - sys-img-armeabi-v7a-android-22
+        licenses:
+          - 'android-sdk-preview-license-52d11cd2'
+          - 'android-sdk-license-.+'
+          - 'google-gdk-license-.+'
       before_script:
         - android list targets
         - echo no | android create avd --force -n test -t android-22 --abi armeabi-v7a
