@@ -10,6 +10,7 @@ cache:
     - $HOME/.gradle/wrapper/
     - $HOME/.android/build-cache
 env:
+  - PATH=$PATH:$JAVA_HOME/bin
   - IS_RELEASE=true
 language: android
 android:
@@ -32,11 +33,11 @@ before_script:
   - yarn build-android-release
 script:
   - yarn e2e-android
+  - adb devices
 before_install:
   - nvm install 8
   - node --version
   - npm install -g yarn
-  - PATH=$PATH:$JAVA_HOME/bin
   - npm install -g appium-doctor
   - appium-doctor
 install:
