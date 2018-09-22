@@ -10,7 +10,7 @@ cache:
     - $HOME/.gradle/wrapper/
     - $HOME/.android/build-cache
 env:
-  - PATH=$PATH:$JAVA_HOME/bin IS_RELEASE=true
+  - PATH=$PATH:$JAVA_HOME/bin IS_RELEASE=true ANDROID_PLATFORM_VERSION="5.1.1"
 language: android
 android:
   components:
