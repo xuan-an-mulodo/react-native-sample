@@ -24,7 +24,7 @@ const androidCaps = (isRelease) => ({
   platformName: 'Android',
   automationName: 'UiAutomator2',
   deviceName: process.env.ANDROID_DEVICE_NAME || 'Android Emulator',
-  platformVersion: process.env.ANDROID_PLATFORM_VERSION || '9',
+  platformVersion: process.env.ANDROID_PLATFORM_VERSION || null,
   app: isRelease ? APP_ANDROID_RELEASE : APP_ANDROID_DEBUG,
 });
 
