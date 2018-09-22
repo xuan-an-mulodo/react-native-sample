@@ -6,40 +6,52 @@ cache:
   directories:
     - node_modules
     - ios/build
-    - iod/Pods
     - $HOME/.gradle/caches/
     - $HOME/.gradle/wrapper/
     - $HOME/.android/build-cache
 env:
-  - IS_RELEASE=true
-language: objective-c
-osx_image: xcode9.4
-os: osx
+  - PATH=$PATH:$JAVA_HOME/bin IS_RELEASE=true ANDROID_PLATFORM_VERSION="5.1.1"
+language: android
+android:
+  components:
+    - build-tools-22.0.1
+    - build-tools-23.0.1
+    - android-22
+    - android-23
+    - sys-img-armeabi-v7a-android-22
+licenses:
+  - android-sdk-preview-license-.+
+  - android-sdk-license-.+
+  - google-gdk-license-.+
 before_script:
-  - yarn build-ios-release
+  - android list targets
+  - echo no | android create avd --force -n test -t android-22 --abi armeabi-v7a
+  - emulator -avd test -no-audio -no-window &
+  - android-wait-for-emulator
+  - adb shell input keyevent 82 &
+  - yarn build-android-release
 script:
-  - IOS_DEVICE_NAME="iPhone 5s" yarn e2e-ios && yarn shutdown-ios-simulator
-  - IOS_DEVICE_NAME="iPhone 6" yarn e2e-ios && yarn shutdown-ios-simulator
-  - IOS_DEVICE_NAME="iPhone 6 Plus" yarn e2e-ios && yarn shutdown-ios-simulator
-  - IOS_DEVICE_NAME="iPhone X" yarn e2e-ios && yarn shutdown-ios-simulator
+  - yarn e2e-android
+  - adb devices
 before_install:
   - nvm install 8
   - node --version
   - npm install -g yarn
+  - npm install -g appium-doctor
+  - appium-doctor
 install:
   - yarn install
-  - cd ios && pod install && cd ..
-  - yarn test
   - yarn appium --log-level error &
+  - yarn test
 before_deploy:
   - git status --short
 deploy:
   provider: pages
   local-dir: .
-  target-branch: verify-screenshot-with-appium
+  target-branch: verify-screenshot-with-appium-for-android
   skip-cleanup: true
   github-token: $GH_TOKEN
   keep-history: true
   on:
     branch:
-      - verify-screenshot-with-appium
+      - verify-screenshot-with-appium-for-android
