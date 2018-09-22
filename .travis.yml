@@ -21,7 +21,7 @@ script:
   - IOS_DEVICE_NAME="iPhone 5s" yarn e2e-ios && yarn shutdown-ios-simulator
   - IOS_DEVICE_NAME="iPhone 6" yarn e2e-ios && yarn shutdown-ios-simulator
   - IOS_DEVICE_NAME="iPhone 6 Plus" yarn e2e-ios && yarn shutdown-ios-simulator
-  - IOS_DEVICE_NAME="iPhone X" yarn yarn e2e-ios && yarn shutdown-ios-simulator
+  - IOS_DEVICE_NAME="iPhone X" yarn e2e-ios && yarn shutdown-ios-simulator
 before_install:
   - nvm install 8
   - node --version
