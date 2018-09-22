@@ -5,7 +5,7 @@ jasmine.DEFAULT_TIMEOUT_INTERVAL = 600000;
 const APP_IOS_DEBUG       = 'ios/build/Build/Products/Debug-iphonesimulator/BReactNative.app';
 const APP_IOS_RELEASE     = 'ios/build/Build/Products/Release-iphonesimulator/BReactNative.app';
 const APP_ANDROID_DEBUG   = 'android/app/build/outputs/apk/app-debug.apk';
-const APP_ANDROID_RELEASE = 'android/app/build/outputs/apk/app-release.apk';
+const APP_ANDROID_RELEASE = 'android/app/build/outputs/apk/app-release-unsigned.apk';
 
 const serverConfig = {
   host: 'localhost',
