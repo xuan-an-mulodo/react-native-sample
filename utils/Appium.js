@@ -12,7 +12,7 @@ const serverConfig = {
   port: 4723,
 };
 
-const iosCaps = (isRelease) => ({
+export const iosCaps = (isRelease) => ({
   platformName: 'iOS',
   automationName: 'XCUITest',
   deviceName: process.env.IOS_DEVICE_NAME || 'iPhone 6',
@@ -20,7 +20,7 @@ const iosCaps = (isRelease) => ({
   app: isRelease ? APP_IOS_RELEASE : APP_IOS_DEBUG,
 });
 
-const androidCaps = (isRelease) => ({
+export const androidCaps = (isRelease) => ({
   platformName: 'Android',
   automationName: 'UiAutomator2',
   deviceName: process.env.ANDROID_DEVICE_NAME || 'Android Emulator',
