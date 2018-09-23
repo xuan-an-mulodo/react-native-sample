@@ -11,7 +11,6 @@ afterAll(async function() {
 });
 
 it('Open app screen', async function() {
-  await driver.elementsByAccessibilityId('Welcome to React Native!');
   await verifyScreenshot('App');
 });
 

@@ -23,7 +23,7 @@ exports[`renders without crashing 1`] = `
       }
     }
   >
-    Welcome to React Native!
+    Welcome to React Native Sample!
   </Text>
   <Text
     accessible={true}
