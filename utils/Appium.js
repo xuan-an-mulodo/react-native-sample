@@ -33,9 +33,9 @@ export async function init(
   isRelease: boolean = process.env.IS_RELEASE)
 {
   const driver = await wd.promiseChainRemote(serverConfig);
-  const caps = isAndroid ? androidCaps(isRelease) : iosCaps(isRelease);
-  console.log({ appium: { caps } });
-  await driver.init(caps);
+  const capabilities = isAndroid ? androidCaps(isRelease) : iosCaps(isRelease);
+  console.log({ appium: { capabilities } });
+  await driver.init(capabilities);
   return driver;
 }
 
