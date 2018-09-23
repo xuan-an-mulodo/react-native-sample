@@ -10,7 +10,7 @@ cache:
     - $HOME/.gradle/wrapper/
     - $HOME/.android/build-cache
 env:
-  - PATH=$PATH:$JAVA_HOME/bin IS_RELEASE=true ANDROID_PLATFORM_VERSION="5.1.1"
+  - PATH=$PATH:$JAVA_HOME/bin IS_RELEASE=true
 language: android
 android:
   components:
@@ -31,7 +31,7 @@ before_script:
   - adb shell input keyevent 82 &
   - yarn build-android-release
 script:
-  - yarn e2e-android
+  - ANDROID_PLATFORM_VERSION="5.1.1" yarn e2e-android
   - adb devices
 before_install:
   - nvm install 8
