@@ -31,7 +31,7 @@ before_script:
   - adb shell input keyevent 82 &
   - yarn build-android-release
 script:
-  - ANDROID_PLATFORM_VERSION="5.1.1" yarn e2e-android
+  - ANDROID_PLATFORM_VERSION=5.1.1 yarn e2e-android
   - adb devices
 before_install:
   - nvm install 8
